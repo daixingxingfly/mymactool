@@ -1,0 +1,2 @@
+# mymactool
+mac configuration
