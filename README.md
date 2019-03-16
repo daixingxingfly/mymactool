@@ -137,9 +137,46 @@ brew cask install iterm2
     ```
 
 
-## NVM  
+## NVM   NPM
 
+- 安装
 
+  `wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash`
+
+- 改镜像
+
+  ```
+  export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node
+  export NVM_IOJS_ORG_MIRROR=https://npm.taobao.org/mirrors/iojs
+  ```
+
+- 常用指令
+
+  ```
+  nvm install <version>
+  nvm uninstall <version>
+  nvm ls
+  nvm ls-remote
+  nvm current
+  nvm use <version>
+  nvm alias <name> <version> 添加别名
+  nvm alias default <version> 默认版本
+  nvm unalias <name>
+  ```
+
+- NPM配置
+
+  ```
+  还原
+  npm config set registry  https://registry.npmjs.org
+  淘宝镜像
+  npm config set registry https://registry.npm.taobao.org --global
+  npm config set disturl https://npm.taobao.org/dist --global
+  cnpm
+  npm --registry=https://registry.npm.taobao.org install cnpm -g   --cnpm
+  ```
+
+  
 
 ## 其他
 
@@ -160,26 +197,43 @@ defaults write com.apple.finder PathBarRootAtHome -bool TRUE;killall Finder
 defaults delete com.apple.finder PathBarRootAtHome;killall Finder
 ```
 
+```
+Visual Studio Code
+SwitchHosts
+Dash 
+Alfred
+Charles
+SourceTree 
+Sketch 
+Skitch 
+Virtual Box
+QQ 
+WeChat 
+Airmail
+IINA
+ScreenFlow
+Typora
+The Unarchiver
+Paste
+Bartender
+AppCleaner
+iStat Menus
+Moom  
+ForkLift
+```
 
+[Git Awesome Mac](https://github.com/jaywcjlove/awesome-mac/blob/master/README-zh.md)
 
-https://github.com/jaywcjlove/awesome-mac/blob/master/README-zh.md
-
-https://github.com/madreain/MadreainNote/blob/master/Mac/Mac-zh.md
+[MadreainNote](https://github.com/madreain/MadreainNote/blob/master/Mac/Mac-zh.md)
 
 https://sspai.com/search/article?q=automa
 
-https://www.zhihu.com/question/20873070 优雅使用
-workflow https://github.com/zenorocha/alfred-workflows https://www.zhihu.com/question/20656680
+[优雅使用macOS](https://www.zhihu.com/question/20873070) 
 
-https://www.jianshu.com/p/7421f7a03e07 https://github.com/sindresorhus/quick-look-plugins  快速查看
+[alfred workflows](https://github.com/zenorocha/alfred-workflows)
+https://www.zhihu.com/question/20656680
 
-
-
-https://github.com/sb2nov/mac-setup
-https://github.com/learn-anything/chrome-extensions#readme 谷歌插件 csdn
-https://baijiahao.baidu.com/s?id=1627602624121494090&wfr=spider&for=pc
-
-dash workflow  https://www.alfredapp.com/blog/productivity/dash-quicker-api-documentation-search/"
+[快速查看插件](https://github.com/sindresorhus/quick-look-plugins)  
 
 https://www.jianshu.com/p/253cb9003411  npm镜像
 
