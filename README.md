@@ -221,6 +221,7 @@ iStat Menus
 Moom  
 ForkLift
 ```
+https://github.com/sorrycc/awesome-tools
 
 [Git Awesome Mac](https://github.com/jaywcjlove/awesome-mac/blob/master/README-zh.md)
 
