@@ -29,6 +29,9 @@
     git remote set-url origin https://mirrors.aliyun.com/homebrew/homebrew-core.git
     
     brew update
+    // 原来的
+    https://github.com/Homebrew/brew.git
+    https://github.com/Homebrew/homebrew-core
     ```
 
   - 替换bintray镜像
@@ -216,7 +219,6 @@ Typora
 The Unarchiver
 Paste
 Bartender
-AppCleaner
 iStat Menus
 Moom  
 ForkLift
