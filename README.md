@@ -4,7 +4,7 @@
 
 ## HomeBrew安装
 
-- [镜像安装]( https://www.jianshu.com/p/97b2552fed42)
+- [镜像安装]( https://brew.idayer.com/guide/start)
 
   - 获取brew_install
 
@@ -22,16 +22,32 @@
   - 替换源
 
     ```
-    cd "$(brew --repo)"
-    git remote set-url origin https://mirrors.aliyun.com/homebrew/brew.git
+    // 中科大源
+    git -C "$(brew --repo)" remote set-url origin https://mirrors.ustc.edu.cn/brew.git
+
+    git -C "$(brew --repo homebrew/core)" remote set-url origin https://mirrors.ustc.edu.cn/homebrew-core.git
+
+    git -C "$(brew --repo homebrew/cask)" remote set-url origin https://mirrors.ustc.edu.cn/homebrew-cask.git
     
-    cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core"
-    git remote set-url origin https://mirrors.aliyun.com/homebrew/homebrew-core.git
+    // 清华大学源
     
+    git -C "$(brew --repo)" remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git
+
+    git -C "$(brew --repo homebrew/core)" remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git
+
+    git -C "$(brew --repo homebrew/cask)" remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-cask.git
+
     brew update
-    // 原来的
-    https://github.com/Homebrew/brew.git
-    https://github.com/Homebrew/homebrew-core
+    
+    // 恢复
+    git -C "$(brew --repo)" remote set-url origin https://github.com/Homebrew/brew.git
+
+    git -C "$(brew --repo homebrew/core)" remote set-url origin https://github.com/Homebrew/homebrew-core.git
+
+    git -C "$(brew --repo homebrew/cask)" remote set-url origin https://github.com/Homebrew/homebrew-cask.git
+
+    brew update
+    
     ```
 
   - 替换bintray镜像
